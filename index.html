@@ -14,8 +14,9 @@
 
 
 <div class="container-fluid mt-3" id="app">
-    <input type="text" class="form-control" v-model="criterioDeBusquedaNombre" placeholder="Ingresar nombre...">
+    <input type="text" class="form-control" v-model="criterioDeBusquedaNombre" placeholder="Ingresar nombre..."> <br>
     <input type="text" class="form-control" v-model="criterioDeBusquedaDocumento" placeholder="Ingresar documento...">
+    <br>
     <div v-if="criterioDeBusquedaNombre.length<3 && criterioDeBusquedaDocumento.length<3" class="alert alert-danger" role="alert"> Ingrese al menos tres caracteres en algun filtro</div>
     <br>
     <div class="card-deck m-0">
@@ -54,6 +55,7 @@
                     { nombre: 'Gonzalo', apellido: 'Garcia Tunon', dni: 38708301, correo: 'garciatunong@gmail.com' },
                     { nombre: 'Eugenio', apellido: 'Sainte Marie', dni: 38707149, correo: 'eugenio.saintemarie@gmail.com' },
                     { nombre: 'Clara', apellido: 'Franzoni', dni: 36626020, correo: 'franzoniclara23@gmail.com' },
+                    { nombre: 'Alexis', apellido: 'Debarnot', dni: 39909013, correo: 'alexisdebarnot@gmail.com' },
                     { nombre: 'x', apellido: 'y', dni: 0, correo: 'x@y' }
                 ]
         },
